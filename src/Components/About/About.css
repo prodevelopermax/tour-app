@@ -1,0 +1,59 @@
+:root {
+  --primaryColor: hsl(199, 100%, 33%);
+  --secondryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0 , 100%);
+  --blackColor: hsl(201, 33% , 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0% , 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor:rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240 , 246);
+  --carddBG: rgb(225, 225 , 235);
+}
+
+.aboutSectionn {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+.aboutSectionn .secContainer {
+  text-align: center;
+}
+.aboutSectionn .secContainer .tittle {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.aboutSectionn .secContainer .mainContent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.aboutSectionn .secContainer .mainContent .singleItem {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.aboutSectionn .secContainer .mainContent .singleItem img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+.aboutSectionn .secContainer .mainContent .singleItem h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.aboutSectionn .secContainer .mainContent .singleItem p {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutSectionn .secContainer .mainContent {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}/*# sourceMappingURL=About.css.map */

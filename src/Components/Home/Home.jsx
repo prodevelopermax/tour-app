@@ -1,8 +1,8 @@
 import React,{useEffect} from 'react'
 import './Home.css'
-import darkgreen from '../../Assets/darkgreen.mp4'
+import akes from '../../Assets/akes.mp4'
 import { GrLocation } from "react-icons/gr";
-import { HiFilter } from "react-icons/hi";
+
 import { BsListTask } from "react-icons/bs";
 import { FaTwitter } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
@@ -27,7 +27,7 @@ const Home = () => {
   return (
     <section className="home">
       <div className="overlay"></div>
-      <video src={darkgreen} muted autoPlay loop type="darkreen/mp4"></video>
+      <video src={akes} muted autoPlay loop type="akes/mp4"></video>
 
       <div className="homeContent container">
         <div className="textDiv">

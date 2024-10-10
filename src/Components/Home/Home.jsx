@@ -27,7 +27,7 @@ const Home = () => {
   return (
     <section className="home">
       <div className="overlay"></div>
-      <video src={akes} muted autoPlay loop type="akes/mp4"></video>
+      <video src={require('../../Assets/akes.mp4')} muted autoPlay loop type="akes/mp4"></video>
 
       <div className="homeContent container">
         <div className="textDiv">

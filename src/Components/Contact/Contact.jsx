@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react'
 import './Contact.css'
-import footervideo from '../../Assets/footervideo.mp4'
+
 import { MdOutlineTravelExplore } from "react-icons/md";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { AiFillInstagram } from "react-icons/ai";
@@ -22,7 +22,8 @@ const Contact = () => {
   return (
    <section className='footer'>
     <div className="videoDiv">
-      <video src={footervideo} loop autoPlay muted type='footervideo/mp4'></video>
+    <video src="/assets/footervideo.mp4" muted autoPlay loop />
+
     </div>
 
     <div className="secContent container">

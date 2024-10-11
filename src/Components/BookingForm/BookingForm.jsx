@@ -1,14 +1,18 @@
 import React from 'react';
 import './BookingForm.css';
 
+
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 const BookingForm = () => {
   return (
     <div className="booking-form-container">
       <form className="booking-form">
-        <h2>Book Your Tour</h2>
+        <h2 data-aos="fade-down" >Book Your Tour</h2>
         <div className="form-group">
-          <label>Name:</label>
-          <input type="text" placeholder="Enter your name" />
+          <label  >Name:</label>
+          <input   type="text" placeholder="Enter your name" />
         </div>
         <div className="form-group">
           <label>Email:</label>

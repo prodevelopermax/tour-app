@@ -20,7 +20,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.6;
+  position: relative;
+  z-index: 1;
+}
+.booking-form-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Translucent dark overlay */
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px); /* Blur effect */
+  z-index: -1; /* Ensure it's behind the form */
 }
 
 .booking-form {
@@ -32,16 +45,18 @@
 }
 .booking-form h2 {
   text-align: center;
+  color: var(--textColor);
+  font-weight: 800;
 }
 
 .form-group {
   margin-bottom: 15px;
-  color: black;
+  color: var(--textColor);
   font-weight: 900;
 }
 .form-group label {
-  color: black;
-  font-weight: 800;
+  color: var(--textColor);
+  font-weight: 900;
 }
 
 .form-group input {
@@ -49,11 +64,13 @@
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  color: black;
+  background-color: transparent;
+  outline: 10px var(--textColor);
+  color: var(--textColor);
 }
 .form-group input placeholder {
   color: var(--textColor);
-  font-weight: 900;
+  font-weight: 1000;
 }
 
 .submit-btn {
@@ -68,4 +85,28 @@
 
 .submit-btn:hover {
   background-color: #2980b9;
+}
+
+@media (max-width: 767px) {
+  .booking-form {
+    width: 90%; /* Reduce the width on smaller screens */
+    padding: 15px; /* Adjust padding */
+  }
+  .submit-btn {
+    padding: 8px; /* Adjust button padding */
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .booking-form {
+    width: 80%; /* Moderate width for tablets */
+    padding: 20px; /* Keep padding moderate */
+  }
+}
+/* Large devices (desktops, 1024px and up) */
+@media (min-width: 1024px) {
+  .booking-form {
+    width: 400px; /* Set width for larger screens */
+    padding: 20px; /* Keep original padding */
+  }
 }/*# sourceMappingURL=BookingForm.css.map */

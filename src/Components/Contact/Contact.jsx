@@ -28,16 +28,16 @@ const Contact = () => {
 
     <div className="secContent container">
       <div className="contactDiv">
-     <div data-aos="fade-up" className="text">
+     {/* <div data-aos="fade-up" className="text">
       <small>KEEP IN TOUCH</small>
       <h2>Travel With Us</h2>
-     </div>
-     <div className="inputDiv flex">
+     </div> */}
+     {/* <div className="inputDiv flex">
       <input data-aos="fade-up" type="email" name="email" id="email" placeholder='Enter Email Address'/>
      <button data-aos="fade-up" className='btn flex'>
       Send <FiSend  className='icon'/>
       </button>
-        </div>
+        </div> */}
       </div>
       <div className="footerCard flex">
           <div className="footerIntro flex">

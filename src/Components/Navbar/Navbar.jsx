@@ -113,11 +113,12 @@ const Navbar = ({ homeRef, aboutRef, destinationsRef, contactRef,bookingRef  }) 
               <a href="#" className="navLinks" onClick={(e) => scrollToSection(homeRef, e)}>Home</a>
             </li>
             <li className="navItems">
-              <a href="#" className="navLinks" onClick={(e) => scrollToSection(aboutRef, e)}>About</a>
-            </li>
-            <li className="navItems">
               <a href="#" className="navLinks" onClick={(e) => scrollToSection(destinationsRef, e)}>Destinations</a>
             </li>
+            <li className="navItems">
+              <a href="#" className="navLinks" onClick={(e) => scrollToSection(aboutRef, e)}>About</a>
+            </li>
+            
             <li className="navItems">
               <a href="#" className="navLinks" onClick={(e) => scrollToSection(contactRef, e)}>Contact</a>
             </li>

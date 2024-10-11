@@ -71,7 +71,7 @@ import { MdOutlineTravelExplore } from "react-icons/md";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { TbGridDots } from "react-icons/tb";
 
-const Navbar = ({ homeRef, aboutRef, destinationsRef, contactRef }) => {
+const Navbar = ({ homeRef, aboutRef, destinationsRef, contactRef,bookingRef  }) => {
   const [active, setActive] = useState('navBar');
 
   const showNav = () => {
@@ -124,9 +124,10 @@ const Navbar = ({ homeRef, aboutRef, destinationsRef, contactRef }) => {
             {/* <button className="btn">
               <a href="#">Book Now</a>
             </button> */}
-            <button className="btn">
-               <a href="/BookNow">BookNow</a> {/* Update the href to route to booking */}
-          </button>
+           
+          <button className="btn">
+          <a href="#" onClick={(e) => scrollToSection(bookingRef, e)}>Book Now</a>
+        </button>
           </ul>
 
           <div onClick={removeNavbar} className="closeNavbars">

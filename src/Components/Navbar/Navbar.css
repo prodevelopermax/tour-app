@@ -65,7 +65,7 @@
     padding: 0.5rem 0;
   }
   .header .navBar .navLists .navItems .navLinks {
-    color: #24565C;
+    color: var(--textColor);
     font-size: 0.9rem;
     font-weight: 600;
   }

@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react'
 import './Home.css'
-import akes from '../../Assets/akes.mp4'
+// import akes from '../../assets/akes.mp4'
 import { GrLocation } from "react-icons/gr";
 
 import { BsListTask } from "react-icons/bs";
@@ -27,7 +27,12 @@ const Home = () => {
   return (
     <section className="home">
       <div className="overlay"></div>
-      <video src={require('../../Assets/akes.mp4')} muted autoPlay loop type="akes/mp4"></video>
+      {/* <video src={require('../../assets/akes.mp4')} muted autoPlay loop type="akes/mp4"></video> */}
+      <video muted autoPlay loop className="backgroundVideo">
+        <source src={/assets/akes.mp4} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
 
       <div className="homeContent container">
         <div className="textDiv">

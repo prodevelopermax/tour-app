@@ -35,6 +35,26 @@
           backdrop-filter: blur(8px); /* Blur effect */
   z-index: -1; /* Ensure it's behind the form */
 }
+.booking-form-container .close-icon {
+  position: absolute; /* Positioning */
+  top: 100px; /* Distance from the top */
+  left: 600px; /* Distance from the left */
+  width: 30px; /* Width of the circle */
+  height: 30px; /* Height of the circle */
+  border-radius: 50%; /* Make it circular */
+  background-color: var(--primaryColor);
+  display: flex; /* Use flexbox to center the icon */
+  justify-content: center; /* Center the icon horizontally */
+  align-items: center; /* Center the icon vertically */
+  font-size: 20px; /* Size of the icon */
+  color: white; /* Icon color */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transitions for background and color */
+}
+.booking-form-container .close-icon:hover {
+  background-color: white; /* Change background on hover */
+  color: var(--primaryColor); /* Change icon color on hover */
+}
 
 .booking-form {
   background-color: rgba(255, 255, 255, 0.8);

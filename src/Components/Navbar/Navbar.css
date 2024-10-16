@@ -74,8 +74,14 @@
   }
   .header .navBar .navLists .btn {
     margin-top: 1rem;
+    margin-top: 1rem;
+    color: white;
+    font-weight: 600;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 5px 18px;
   }
-  .header .navBar .navLists .btn a {
+  .header .navBar .navLists .btn link {
     font-weight: 600;
     color: white;
   }
@@ -125,8 +131,15 @@
   }
   .header .navBar .navLists .btn {
     margin-left: 1rem;
+    margin-top: 1rem;
+    color: white;
+    font-weight: 500;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 5px 18px;
+    font-size: 14px;
   }
-  .header .navBar .navLists .btn a {
+  .header .navBar .navLists .btn link {
     color: white;
     font-weight: 500;
   }

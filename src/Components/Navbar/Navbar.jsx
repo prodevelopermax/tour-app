@@ -234,11 +234,12 @@ import './Navbar.css';
 import { MdOutlineTravelExplore } from "react-icons/md";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { TbGridDots } from "react-icons/tb";
-import { Link, useLocation } from 'react-router-dom';  // Import useLocation from react-router-dom
+import { Link, useLocation, useNavigate } from 'react-router-dom'; // Import useNavigate
 
 const Navbar = ({ homeRef, aboutRef, destinationsRef, contactRef }) => {
   const [active, setActive] = useState('navBar');
   const location = useLocation(); // Get the current location
+  const navigate = useNavigate(); // Get the navigate function
 
   const showNav = () => {
     setActive('navBar activeNavbar');
@@ -264,7 +265,7 @@ const Navbar = ({ homeRef, aboutRef, destinationsRef, contactRef }) => {
       }
     } else {
       // If not on the home page, navigate to that page
-      window.location.href = '/'; // Change this to whatever route you want to navigate to
+      navigate('/'); // Use navigate instead of window.location.href
     }
   };
 
@@ -290,6 +291,10 @@ const Navbar = ({ homeRef, aboutRef, destinationsRef, contactRef }) => {
             <li className="navItems">
               <a href="#" className="navLinks" onClick={(e) => scrollToSection(contactRef, e)}>Contact</a>
             </li>
+            <li className="navItems">
+              {/* Move Book Now button inside the nav list */}
+              <Link to="/booking" onClick={removeNavbar} className=" btn">Book Now</Link>
+            </li>
           </ul>
 
           <div onClick={removeNavbar} className="closeNavbars">
@@ -300,13 +305,10 @@ const Navbar = ({ homeRef, aboutRef, destinationsRef, contactRef }) => {
         <div onClick={showNav} className="toggleNavbar">
           <TbGridDots className='icon' />
         </div>
-
-        <button className="btn">
-          <Link to="/booking" onClick={removeNavbar} className="navLinks">Book Now</Link>
-        </button>
       </header>
     </section>
   );
 };
 
 export default Navbar;
+

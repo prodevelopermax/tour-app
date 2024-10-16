@@ -78,8 +78,16 @@
                 }
                 .btn{
                     margin-top: 1rem;
+                    margin-top: 1rem;
+                    color: white;
+                    font-weight: 600;
+                    justify-content: space-between;
+                    gap: .5rem;
+                    padding: 5px 18px;
+                   
+                    
 
-                    a{
+                    link{
                         font-weight: 600;
                         color: white
                     }
@@ -144,7 +152,14 @@
                 }
                 .btn{
                     margin-left: 1rem;
-                    a{
+                    margin-top: 1rem;
+                   color: white;
+                   font-weight: 500;
+                   justify-content: space-between;
+                   gap: .5rem;
+                   padding: 5px 18px;
+                   font-size: 14px;
+                    link{
                         color: white;
                         font-weight: 500;
                     }
@@ -157,7 +172,7 @@
     .header{
         .navLists{
             .navItems{
-                padding: 0 0.7rem;
+                padding: 0 .7rem;
             }
         }
     }

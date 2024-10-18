@@ -1,5 +1,6 @@
 import React,{useEffect} from 'react'
 import './Home.css'
+import u from '../../Assets/u.jpg';
 
 import { GrLocation } from "react-icons/gr";
 
@@ -28,10 +29,7 @@ const Home = () => {
     <section className="home">
       <div className="overlay"></div>
     
-      <video muted autoPlay loop className="backgroundVideo">
-        <source src="/assets/darkgreen.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+     <img src={u} alt="water"  className='backgroundImage'/>
 
 
       <div className="homeContent container">

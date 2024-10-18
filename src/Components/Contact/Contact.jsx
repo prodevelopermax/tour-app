@@ -6,6 +6,7 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import { AiFillInstagram } from "react-icons/ai";
 import { AiFillYoutube } from "react-icons/ai";
 import { FaTripadvisor } from "react-icons/fa";
+import swit from '../../Assets/swit.jpg'
 import { FiSend } from "react-icons/fi";
 import { FiChevronRight } from "react-icons/fi";
 
@@ -22,7 +23,7 @@ const Contact = () => {
   return (
    <section className='footer'>
     <div className="videoDiv">
-    <video src="/assets/footervideo.mp4" muted autoPlay loop />
+    <img src={swit} alt="swit" />
 
     </div>
 

@@ -1,4 +1,6 @@
 import React from 'react';
+
+import { useNavigate } from 'react-router-dom';
 import './BookingForm.css';
 
 
@@ -6,8 +8,10 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 
 const BookingForm = () => {
+ 
   return (
     <div className="booking-form-container">
+     
       <form className="booking-form">
         <h2 data-aos="fade-down" >Book Your Tour</h2>
         <div className="form-group">
@@ -28,6 +32,7 @@ const BookingForm = () => {
         </div>
         <button type="submit" className="submit-btn">Submit</button>
       </form>
+   
     </div>
   );
 };

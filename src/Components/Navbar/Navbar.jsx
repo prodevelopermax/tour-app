@@ -312,3 +312,5 @@ const Navbar = ({ homeRef, aboutRef, destinationsRef, contactRef }) => {
 
 export default Navbar;
 
+
+

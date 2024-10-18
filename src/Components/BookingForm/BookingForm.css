@@ -1,5 +1,5 @@
 :root {
-  --primaryColor: hsl(199, 100%, 33%);
+  --primaryColor: #0073a8;
   --secondryColor: hsl(187, 85%, 43%);
   --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
   --whiteColor: hsl(0, 0, 100%);
@@ -39,6 +39,7 @@
 .booking-form {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
+  margin-top: 50px;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   width: 400px;
@@ -69,11 +70,11 @@
 }
 .form-group input::-moz-placeholder {
   color: var(--textColor);
-  font-weight: 1000;
+  font-weight: 400;
 }
 .form-group input::placeholder {
   color: var(--textColor);
-  font-weight: 1000;
+  font-weight: 400;
 }
 
 .submit-btn {
